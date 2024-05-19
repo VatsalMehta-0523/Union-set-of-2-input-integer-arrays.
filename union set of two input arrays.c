@@ -28,11 +28,11 @@ int main(){
 
     //merging 2 arrays for finding union...
     int mer_arr[n+m];
-    for (int i = 0 ; i < n ;  i++ ){
-            mer_arr[i] = arr1[i] ;
+    for (int i = 0 ; i < n ;  i++ ){                     // this for loop basically copies values from arr1 to mer_arr
+            mer_arr[i] = arr1[i] ;                       // with same index as they were in arr1
     }
-    for (int i = n , j = 0 ; i < n+m , j < m ; i++ , j++ ){
-            mer_arr[i] = arr2[j] ;
+    for (int i = n , j = 0 ; i < n+m , j < m ; i++ , j++ ){  // this for loop inserts value from arr2 to mer_arr
+            mer_arr[i] = arr2[j] ;                           // from index n to (m-1)th index...
     }
 
 
